@@ -1,0 +1,43 @@
+figure{
+text-align:center; 
+margin: 20px;
+}
+img{
+width: 300px;
+height: auto;
+}
+figcaption{
+font-size: 0.9rem;
+color: #555;
+}
+.slideEbotao{
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+
+margin: 0 auto;
+}
+.slide{
+display: none;
+}
+.slide.active {
+display: block;
+}
+.Voltar, .proximo{
+padding: 10px 15px;
+background-color: rgba(0,0,0,0.5);
+color: white;
+border: none;
+cursor: pointer;
+}
+
+h4{
+    text-decoration: none;
+    text-align: left;
+    padding-left: 370px;
+}
+
+.cybershot{
+    width: 500px;
+}

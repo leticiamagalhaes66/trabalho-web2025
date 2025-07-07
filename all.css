@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.rodateto {
+    background-color: rgb(0, 7, 74);
+    height: 100px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 100%), rgb(0, 7, 74);
+}
+.h1Principal{
+    color: white;
+    padding-top: 25px;
+}
+.cabeçalho {
+    text-align: center;
+}
+
+
+.menu ul{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.menu ul .liMenu {
+    float:left;
+    display: inline;
+}
+
+.liMenu .linkMenu{
+    color:black;
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
+    background-color: white;
+    margin: 20px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: inline;
+    
+}
+
+.liMenu .linkMenu:hover{
+    border-bottom: 4px rgb(0, 7, 74) solid ;
+    font-size: 17px;
+    transition: 0.50s;
+}
+
+body{
+    font-size:medium;
+    background-color: #ebf4ff;
+    padding: 0px;
+    color: #000000;
+}
+
+h2{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 7px;
+}
+
+p {
+    max-width: 800px;
+    line-height: 1.5;
+    text-align: justify;
+    margin: auto;
+}
+
+body::before, body::after{
+    content: "";                        
+    position: fixed;                    
+    top: 0;                             
+    width: 300px;                        
+    height: 100%;                       
+    background-color: rgb(0, 7, 74);   
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5) 12%, transparent 100%), rgb(0, 7, 74);
+    background-size: cover;
+    background-repeat: repeat-y;
+    z-index: -1;
+}
+body::before {
+    left: 0;
+}
+
+body::after {
+    right: 0;
+}
+
+@media (max-width: 768px){
+
+body::before, body::after{
+    display: none;
+}}
